@@ -1,0 +1,171 @@
+<html>
+
+<head>
+    <style>
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,700italic,800);
+@import url('https://fonts.googleapis.com/css?family=Caudex&display=swap');
+        .mainmenu {
+            list-style: none;
+            text-align: center;
+            border-bottom-style: solid;
+            border-bottom-color: #124a58;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        height: 50px;
+        width: 85px;
+        line-height: 48px;
+        text-align: center;
+        font-family: "open sans";
+        padding: 0 20px 0 20px;
+        border-radius: 4px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    a:hover {
+        transition: background-color 0.1s linear, color 0.1s linear;
+        background-color: #124a58;
+        color: white;
+        cursor: pointer;
+    }
+    a {
+        text-decoration: none;
+        align-content: center;
+        padding: 8px 10px;
+    }
+    /* Style the buttons that are used to open and close the accordion panel */
+    .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+    }
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    .active,
+    .accordion:hover {
+        background-color: #ccc;
+    }
+    /* Style the accordion panel. Note: hidden by default */
+    .panel {
+        padding: 0 18px;
+        background-color: white;
+        display: none;
+        overflow: hidden;
+    }
+body{
+    font-family: 'Caudex', serif;
+    text-align: center;
+}
+
+/* Chat containers */
+.container {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+}
+
+/* Darker chat container */
+.darker {
+    border-color: #ccc;
+    background-color: rgba(89, 191, 216, 0.3);
+}
+
+/* Clear floats */
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.containerdarker{
+    text-align: right;
+}
+/* Style images */
+.container img {
+    float: left;
+    max-width: 50px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+/* Style the right image */
+.container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+/* Style time text */
+.time-right {
+    float: right;
+    color: #aaa;
+}
+
+/* Style time text */
+.time-left {
+    float: left;
+    color: #999;
+}
+.hey{
+    width:50%;
+    margin-left: 400px;
+    border:#124a58;
+    border-style: solid;
+    
+}
+#not{
+    text-align: right;
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="mainmenu">
+            <a>HOME</a>
+            <a href="C:\Users\K Jaganathan\Desktop\anjali\web technology1\PROJECT!\faq.html">FAQ</a>
+            <a href="C:\Users\K Jaganathan\Desktop\anjali\web technology1\PROJECT!\volunteer quiz.html">QUIZ</a>
+        </div>
+    </header>
+    <h1>Chat Messages</h1>
+    <div class="hey">
+    <div class="container" >
+        <img src="lily.png" alt="Avatar">
+        <p>Hello. How are you today?</p>
+        <span class="time-right">11:00</span>
+    </div>
+
+    <div class="container darker" id="not" align="right">
+        <img src="placeholder.jpg" alt="Avatar" class="right">
+        <p>Hey! I'm fine. Thanks for asking!</p>
+        <span class="time-left">11:01</span>
+    </div>
+
+    <div class="container">
+        <img src="lily.png" alt="Avatar">
+        <p>Sweet! So, what do you wanna do today?</p>
+        <span class="time-right">11:02</span>
+    </div>
+
+    <div class="container darker" id="not" align="right">
+        <img src="placeholder.jpg" alt="Avatar" class="right">
+        <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
+        <span class="time-left">11:05</span>
+    </div>
+</div>
+</body>
+
+</html>

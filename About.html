@@ -1,0 +1,167 @@
+<html>
+
+<head>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,700italic,800);
+        body {
+            color: black;
+        }
+        
+        .mainmenu {
+            list-style: none;
+            text-align: center;
+            border-bottom-style: solid;
+            border-bottom-color: #124a58;
+        }
+        
+        
+        .nav {
+            text-decoration: none;
+            color: black;
+            display: inline-block;
+            height: 50px;
+            width: 85px;
+            line-height: 48px;
+            text-align: center;
+            font-family: "open sans";
+            padding: 0 20px 0 20px;
+            border-radius: 4px;
+            border-bottom-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+        }
+        
+        .nav:hover {
+            background-color: #124a58;
+            color: white;
+        }
+        
+        .nav.current {
+            background-color: #124a58;
+            color: white;
+        }
+        
+        .row {
+            display: none;
+        }
+        
+        .title {
+            background-image: linear-gradient(#aec6cf, #124a58);
+            padding: 100px;
+            color: white;
+        }
+        
+        h1,
+        p {
+            color: white;
+            font-family: open sans;
+            font-size: 50px;
+        }
+        
+        .card {
+            background-color: rgb(51, 50, 50);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+            padding: 16px;
+            text-align: center;
+            border-radius: 2%;
+        }
+        
+        .title2 {
+            color: grey;
+            font-size: 18px;
+        }
+        
+        img {
+            border-radius: 50%;
+            max-width: 40%;
+            height: auto;
+        }
+        
+        .login_btn {
+            position: absolute;
+            top: 20px;
+            right: 10px;
+            text-decoration: none;
+            color: #124a58;
+        }
+        
+        .login_btn:hover {
+            color: cornflowerblue
+        }
+
+.logo{
+   display:inline-block;
+    margin-left: 20px;
+width: 75px;
+height: 50px;
+  background: url(log.png);
+
+    
+}
+
+
+
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $('div.row').fadeIn(3000).removeClass('row');
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="logo_1">
+        
+        </div>
+        <div class="mainmenu">
+            <a href="Home.html" class="logo"></a>
+            <a href="Home.html" class="nav">HOME</a>
+            <a class="nav">TAKE QUIZ</a>
+            <a class="nav" href="Categories.html">CATEGORIES</a>
+            <a class="current nav" href="About.html">ABOUT</a>
+            <a class="login_btn" href="login.html">LOGIN/SIGN UP</a>
+        </div>
+    </header>
+    <div class="title">
+        <h1 align="center">ABOUT US</h1>
+        <p style="color:white ; opacity: 0.8;font-size:20px">The main goal of this website is to create a safe place for people who need it and to also help in giving back to the community by letting people volunteer. This website is not essentialy a substitue for professional help. However, talking to
+            people who know what you're going through will help immensily. One can either choose to sign up as a member or as a volunteer. upon choosing a path, they'll be asked to take a simple quiz that will determine the next step. One of our main
+            selling points in anonymity. Each volunteer/member will have a unique user ID of their choosing. No personal information will be exchanged among the participants. We hope to help as many people as we can.</p>
+    </div>
+    <div>
+        <div class="row">
+            <table cellspacing="30px" cellpadding="50px">
+                <td style="width:30%">
+                    <div class="card">
+                        <img src="placeholder.jpg" style="width:100%">
+                        <h3 style="color:white">Sivanjali</h3>
+                        <p class="title2">Co Founder</p>
+                        <p style="opacity:0.6">PES University</p>
+                    </div>
+                </td>
+                <td style="width:30%">
+                    <div class="card">
+                        <img src="placeholder.jpg" style="width:100%">
+                        <h3 style="color:white">Sanriya</h3>
+                        <p class="title2">Co Founder</p>
+                        <p style="opacity:0.6">PES University</p>
+                    </div>
+                </td>
+                <td style="width:30%">
+                    <div class="card">
+                        <img src="placeholder.jpg" style="width:100%">
+                        <h3 style="color:white">Triambaka</h3>
+                        <p class="title2">Co Founder</p>
+                        <p style="opacity:0.6">PES University</p>
+                    </div>
+                </td>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+</html>

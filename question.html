@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Quiz</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <style>
+        
+    @import url('https://fonts.googleapis.com/css?family=Caudex&display=swap');
+    body{
+        color: #124a58;
+        font-family: 'Caudex', serif;
+        background-image: url("sky.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    form{
+        width: 50%;
+        font-size: 16px;
+        float: none;
+        margin: auto;
+            font-family: 'Caudex', serif;
+            color:white;
+            background-color: rgba(0, 0, 0, 0.5);
+            border:#33a9c7;
+            border-style: solid;
+            padding:15px;
+    }
+    #but, #new2{
+        text-align: center;
+        
+        font-family: 'Caudex', serif;
+        color:#070707;
+    }
+
+
+    #but2,#but1,#but3{
+        text-decoration: none;
+        background-color:#124a58;
+        color: white;
+        height: 50px;
+        width: 170px;
+        text-align: center;
+        font-family: 'Caudex', serif;
+        padding: 0 20px 0 20px;
+        border-radius: 100px;
+        display: block;
+        margin: 0 auto;
+    }
+    #but2,#but1,#but3:hover{
+        width:177px;
+        font-size: 90%;
+    }
+    #Had{
+        font-family: 'Caudex', serif;
+        color:#124a58;
+        font-size:16px;
+        text-align: center;
+    }
+    .loading{
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin-top: 200px;
+            
+        }
+        @-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+    #load{
+       
+  position: absolute;
+  margin-top:1200px;
+  margin-left:45%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #124a58;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+    
+
+    }
+
+
+        .content{
+            display : block;
+            color:black;
+        }
+    
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,700italic,800);
+    body {
+            color: black;
+        }
+        
+        .mainmenu {
+            list-style: none;
+            text-align: center;
+            border-bottom-style: solid;
+            border-bottom-color: #124a58;
+        }
+        
+        .nav {
+            text-decoration: none;
+            color: black;
+            display: inline-block;
+            height: 50px;
+            width: 85px;
+            line-height: 48px;
+            text-align: center;
+            font-family: "open sans";
+            padding: 0 20px 0 20px;
+            border-radius: 4px;
+            border-bottom-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+        }
+        
+        .nav:hover {
+            /* transition: background-color 0.1s linear, color 0.1s linear;*/
+            background-color: #124a58;
+            color: white;
+        }
+        
+        .nav.current {
+            background-color: #124a58;
+            color: white;
+        }
+        .login_btn {
+            position: absolute;
+            top: 20px;
+            right: 10px;
+            text-decoration: none;
+            color: #124a58;
+        }
+        
+        .login_btn:hover {
+            color:blue;
+        }
+        #new2{
+            color:white;
+        }
+        
+    </style>
+    </head>
+    <body>
+            
+            <header>
+                <div class="mainmenu">
+                    <a href="Home.html" class="nav">HOME</a>
+                    <a class="nav" href="Split.html">TAKE QUIZ</a>
+                    <a href="Categories.html" class="current nav">CATEGORIES</a>
+                    <a class="nav" href="About.html">ABOUT</a>
+                </div>
+                    <a class="login_btn" href="login.html">LOGIN/SIGN UP</a>
+                </header>
+        <p id="Had">
+        <strong>Regardless of how much you might dislike an answer, we request you to answer truthfully to get better results<br>
+        Although this test is compiled to get the best results, it is not entirely accurate. It is therefore advisable to visit a therapist in case you feel you need better help</strong><br>
+        </p>
+        <form id="test"><!-- action="new.html" >-->
+            <div id="new" class="boxed" style="display:inline-block;">
+            1)In the past fortnight, how often did you find it hard to sleep or you overslept?<br>
+            <input type="radio" id="Dep1" name="dep1" value=40 required> Almost always <br>
+            <input type="radio" id="Dep1" name="dep1" value=30 > Quite often<br>
+            <input type="radio" id="Dep1" name="dep1" value=20 > Rarely<br>
+            <input type="radio" id="Dep1" name="dep1" value=10> Never<br>
+            <br><br>
+            2)Have you been experienced at least one of the following in the past month continuously in case of a traumatic event such as the sudden death of a loved one?<br>
+            i)	Flashbacks of the event along with physical symptoms like a racing heart?<br>
+            ii)	Had nightmares surrounding that traumatic event?<br>
+            iii)	Had recurrent, distressing memories surrounding that event?<br>
+            <input type="radio" id="PTSD1" name="ptsd1" value=10 required> Yes <br>
+            <input type="radio" id="PTSD1" name="ptsd1" value=0>No<br>
+            <br><br>
+            3) How much do you relate to this statement?<br>
+            “I find it very hard to concentrate or sit in one place. I always have an uncomfortable urge to move.”
+            <br>
+            <input type="radio" id="Anx1" name="anx1" value=40 required> Relate to it A LOT<br>
+            <input type="radio" id="Anx1" name="anx1" value=30> Relate to it. Happens to me many times<br>
+            <input type="radio" id="Anx1" name="anx1" value=20> Understand how it feels as I have experienced it a few times<br>
+            <input type="radio" id="Anx1" name="anx1" value=10>Cannot relate at all.
+            <br><br><br>
+            4) Did you have a feeling of hopelessness or emptiness in the last 2 weeks?<br>
+            <input type="radio" id="Dep2" name="dep2" value=40 required> Almost all the time<br>
+            <input type="radio" id="Dep2" name="dep2" value=30> Quite often<br>
+            <input type="radio" id="Dep2" name="dep2" value=20> Rarely<br>
+            <input type="radio" id="Dep2" name="dep2" value=10> Never
+            <br><br><br>
+            5)When performing in front of people or when you are surrounded by people, do you tend to blush or sweat or tremble or have an increased heart rate or find your mind going blank?<br>
+            <input type="radio" id="SA1" name="sa1" value=10 required> Yes<br>
+            <input type="radio" id="SA1" name="sa1" value=0>No<br>
+            <br><br>
+
+            6) In these two weeks, did the thoughts of self-harm or suicide occur to you?<br>
+            <input type="radio" id="Dep3" name="dep3" value=40 required> Yes. Almost every other time<br>
+            <input type="radio" id="Dep3" name="dep3" value=30> Frequently<br>
+            <input type="radio" id="Dep3" name="dep3" value=20> Not Frequently<br>
+            <input type="radio" id="Dep3" name="dep3" value=10> Never<br>
+            <br><br>
+          
+            7)While interacting with people do you have a great fear of being judged?<br>
+            <input type="radio" id="SA2" name="sa2" value=10 required> Yes<br>
+            <input type="radio" id="SA2" name="sa2" value=0>No<br>
+            <br><br> 
+                
+            8)Do you find yourself avoiding or not visiting for at least a month:<br>
+            i)	Thoughts or feelings regarding the event<br>
+            ii)	Places, events or objects that act as reminders of that event?<br>
+            <input type="radio" id="PTSD2" name="ptsd2" value=10 required> Yes<br>
+            <input type="radio" id="PTSD2" name="ptsd2" value=0>No<br>
+            <br><br>
+            </div>
+        </form>
+        <p id="but">
+        <button onclick="fun1()" id="but1" style="display:inline-block;">Next</button>
+        </p>
+        <form id="test1">
+            <div id="new1" style="display:none">
+            9) In the past two weeks, have you had recurring feelings of guilt and worthlessness?<br>
+            <input type="radio" id="Dep4" name="dep4" value=40 required> Yes. Almost every day<br>
+            <input type="radio" id="Dep4" name="dep4" value=30> Often but not everyday<br>
+            <input type="radio" id="Dep4" name="dep4" value=20> Seldom<br>
+            <input type="radio" id="Dep4" name="dep4" value=10> Never<br>
+            <br><br>
+            10)Do you find yourself making reasons to avoid meeting people or going to places where people might be present?<br>
+            <input type="radio" id="SA3" name="sa3" value=10 required> Yes<br>
+            <input type="radio" id="SA3" name="sa3" value=0> No<br>
+            <br><br>
+            11) How often have you been experiencing increased irritability at least over the past 6 months?<br>
+            <input type="radio" id="Anx2" name="anx2" value=40 required> Almost all the time<br>
+            <input type="radio" id="Anx2" name="anx2" value=30> Pretty Frequently<br>
+            <input type="radio" id="Anx2" name="anx2" value=20> Rarely<br>
+            <input type="radio" id="Anx2" name="anx2" value=10> Never<br>
+            <br><br>
+
+            12)When you find yourself in a group of people are you very self-conscious in front of them and are awkward and embarrassed?<br>
+            <input type="radio" id="SA4" name="sa4" value=10 required> Yes<br>
+            <input type="radio" id="SA4" name="sa4" value=0> No<br>
+            <br><br>
+            13)Do <strong>at least two</strong> of the following sound like something you experience frequently for at least one month now?<br>
+            i)	Hopelessness about the future<br>
+            ii)	Feeling emotionally numb<br>
+            iii) Difficulty experiencing positive thoughts<br>
+            iv)	Negative thoughts regarding yourself and others<br>
+            v)	Loss of interest in activities that once brought you joy<br>
+            vi)	Recurring feelings of guilt and shame<br>
+            <input type="radio" id="PTSD2" name="ptsd3" value=10 required> Yes<br>
+            <input type="radio" id="PTSD2" name="ptsd3" value=0> No<br>
+            <br><br>
+            14) Do the hobbies and activities that interested you sometime back bring the same joy now?<br>
+            <input type="radio" id="Dep5" name="dep5" value=40 required> No, not at all<br>
+            <input type="radio" id="Dep5" name="dep5" value=30> Yes, but very Rarely<br>
+            <input type="radio" id="Dep5" name="dep5" value=20> Yes it often brings me joy<br>
+            <input type="radio" id="Dep5" name="dep5" value=10> Yes, it brings me the same happiness I felt when I first did it.
+            
+            <br><br><br>
+            15)	Do these lines sound familiar?<br>
+            i)	What if I’m caught in traffic and I’m late for work? And because I’m late my boss fires me? And what if I cannot find a job and all my friends and family find me to be a loser?<br>
+            ii)	What if I go watch this play and I do not like it?<br>
+            iii)What if I choose the wrong career path?
+            <br>
+            <input type="radio" id="Anx3" name="anx3" value=40 required> Yes. My friends and family would say that that is me all the time.<br>
+            <input type="radio" id="Anx3" name="anx3" value=30 > Yes. I worry about small things every now and then<br>
+            <input type="radio" id="Anx3" name="anx3" value=20> Yes. I have caught myself worrying about very insignificant things but not that often<br>
+            <input type="radio" id="Anx3" name="anx3" value=10> No<br>
+            <br><br>
+            16)Do you experience <strong>at least two</strong> of the following constantly for at least a month now and as a result of their nature they prevent you from doing the daily chores?
+            i)	You are always on guard for danger<br>
+            ii)	Trouble concentrating<br>
+            iii) Trouble sleeping<br>
+            iv)	Angry outbursts and irritability<br>
+            v)	Being on the edge or being tensed<br>
+            vi)	Being easily startled<br>
+            <input type="radio" id="PTSD4" name="ptsd4" value=10 required/> Yes<br>
+            <input type="radio" id="PTSD4" name="ptsd4" value=0>No<br>
+            <br><br>
+    </div>
+</form>
+<p id="but">
+        <button onclick="fun2()" id="but2" style="display: none;" >Prev</button>
+        <button id="but3" onclick="f1();" style="display: none;">Submit</button>
+</p>
+<div class="loading" id="load" style="display:none;">
+  
+</div>
+
+<div class="content" id="cont">
+        <p id="new2"></p>
+</div>
+        <script type="text/javascript" src="quiz.js"></script>
+        <script>
+
+        </script>
+    </body>
+</html>

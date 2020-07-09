@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <style>
+        body{
+            text-align: center;
+            background: black;
+            color:white;
+        }
+        .loading{
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin-top: 200px;
+        }
+        .content{
+            display: none;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="loading">
+            <h1>Please Wait</h1>
+            <img src="default.svg" alt="">
+        </div>
+        <div class="content">
+            I am loaded
+        </div>
+        <script>
+        $('.loading').delay(3000).fadeOut(500,function(){
+            $('.content').fadeIn(500);
+        });
+        </script>
+    </body>
+</html>

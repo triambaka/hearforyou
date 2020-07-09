@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,700italic,800);
+        body {
+            color: black;
+        }
+        
+        .mainmenu {
+            text-align: center;
+            border-bottom-style: solid;
+            border-bottom-color: #124a58;
+        }
+        
+        .nav {
+            text-decoration: none;
+            color: black;
+            display: inline-block;
+            height: 50px;
+            width: 85px;
+            line-height: 48px;
+            text-align: center;
+            font-family: "open sans";
+            padding: 0 20px 0 20px;
+            border-radius: 4px;
+            border-bottom-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+        }
+        
+        .nav:hover {
+            background-color: #124a58;
+            color: white;
+        }
+        
+        .nav.current {
+            background-color: #124a58;
+            color: white;
+        }
+        
+        .main {
+            background-image: url('mount.jpg');
+            /*background-size: 1300px 1000px;*/
+            background-position: top;
+            background-repeat: no-repeat;
+            padding: 150px;
+        }
+        
+        .firstcontainer {
+            position: relative;
+        }
+        
+        .divs {
+            flex-flow: row wrap;
+            display: flex;
+            color: white;
+        }
+        
+        .d {
+            flex: 1;
+            margin: 2px;
+            padding: 70px;
+            padding-top: 100px;
+            font-size: 20;
+            background-color: rgb(0, 0, 0, 0.4);
+        }
+        
+        h1,
+        p {
+            color: white;
+        }
+        
+        .quiz_btn {
+            text-decoration: none;
+            background-color: #124a58;
+            color: white;
+            height: 50px;
+            width: 170px;
+            text-align: center;
+            font-family: "open sans";
+            padding: 0 20px 0 20px;
+            border-radius: 100px;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .quiz_btn:hover {
+            width: 177px;
+            font-size: 90%;
+        }
+        .login_btn {
+            position: absolute;
+            top: 20px;
+            right: 10px;
+            text-decoration: none;
+            color: #124a58;
+        }
+        
+        .login_btn:hover {
+            color: cornflowerblue
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="mainmenu">
+            <a href="Home.html" class="nav">HOME</a>
+            <a class="current nav">TAKE QUIZ</a>
+            <a class="nav" href="Categories.html">CATEGORIES</a>
+            <a class="nav" href="About.html">ABOUT</a>
+        </div>
+        <a class="login_btn" href="registration.html">LOGIN/SIGN UP</a>
+    </header>
+    <div class="main firstcontainer">
+
+        <section class="divs">
+            <div class="d">
+                <h1 align="center">VOLUNTEER</h1>
+                <p>Are you interested in helping out people by listening to them?
+                    <br> Take the wuiz and get started right away.
+                </p><br>
+                <br>
+                <button class="quiz_btn" onclick="window.location.href='volquiz.php'">TAKE QUIZ</button>
+
+            </div>
+            <div class="d ">
+                <h1 align="center ">MEMBER</h1>
+                <p>
+                    Do you ever feel like a caged bird? We're here to help. Talk to one of our many volunteers and we hope to make a positive change.<br> Take the quiz and get started.
+                </p> <br>
+                <br><button class="quiz_btn " onclick="window.location.href='question.html'">TAKE QUIZ</button>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>

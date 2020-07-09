@@ -1,0 +1,235 @@
+    <html>
+
+<head>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,700italic,800);
+        @import url('https://fonts.googleapis.com/css?family=Caudex&display=swap');
+        body {
+            color: black;
+            font-family: 'Caudex', serif;
+        }
+        
+        .mainmenu {
+            list-style: none;
+            text-align: center;
+            border-bottom-style: solid;
+            border-bottom-color: #124a58;
+        }
+        
+        .nav {
+            text-decoration: none;
+            color: black;
+            display: inline-block;
+            height: 50px;
+            width: 85px;
+            line-height: 48px;
+            text-align: center;
+            font-family: "open sans";
+            padding: 0 20px 0 20px;
+            border-radius: 4px;
+            border-bottom-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+        }
+        
+        .nav:hover {
+            /* transition: background-color 0.1s linear, color 0.1s linear;*/
+            background-color: #124a58;
+            color: white;
+        }
+        
+        .nav.current {
+            background-color: #124a58;
+            color: white;
+        }
+        
+        .head {
+            background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('home_arms.jpg');
+            height: 0;
+            padding-top: 50%;
+            background-position: top center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: #1d140b;
+            background-attachment: fixed;
+        }
+        
+        .firstcontainer {
+            position: relative;
+            text-align: center;
+        }
+        
+        .title {
+            font-size: 56px;
+            letter-spacing: 0.2em;
+            font-family: 'Caudex', serif;
+            color: #fff;
+            position: absolute;
+            top: 35%;
+            left: 52%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .getstarted {
+            position: absolute;
+            top: 59%;
+            left: 52%;
+            line-height: 48px;
+            transform: translate(-50%, -50%);
+            text-decoration: none;
+            background-color: #124a58;
+            color: white;
+            height: 50px;
+            width: 170px;
+            text-align: center;
+            font-family: "open sans";
+            padding: 0 20px 0 20px;
+            border-radius: 100px;
+        }
+        
+        .secondcontainer {
+            position: relative;
+        }
+        
+        .info {
+            background-image: url('https://i.ibb.co/hLFKMX3/img.png');
+            background-size: 50;
+            background-position: right top;
+            background-repeat: no-repeat;
+            background-color: #000;
+            padding: 200px;
+        }
+        
+        .info_text {
+            color: white;
+            font-size: 20;
+            opacity: 0.3;
+            text-align: center;
+            position: absolute;
+            top: 20px;
+            left: 25px;
+        }
+        
+        .takequiz {
+            background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('https://images.unsplash.com/uploads/141103282695035fa1380/95cdfeef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1274&q=80');
+            background-size: cover;
+            background-position: right top;
+            background-repeat: no-repeat;
+            background-color: #000;
+            padding: 150px;
+        }
+        
+        .quiz_btn {
+            text-decoration: none;
+            background-color: #124a58;
+            color: white;
+            height: 70px;
+            width: 120px;
+            font-family: "open sans";
+            padding: 0 20px 0 20px;
+            border-radius: 100px;
+        }
+        
+        .categories {
+            display: flex;
+            flex-flow: row wrap;
+        }
+        
+        .columns {
+            flex: 1;
+            margin: 2px;
+            padding: 70px;
+            padding-top: 100px;
+            font-size: 20;
+            color: white;
+        }
+        
+        .divcol:hover {
+            opacity: 0.95;
+        }
+        
+        .login_btn {
+            position: absolute;
+            top: 20px;
+            right: 10px;
+            text-decoration: none;
+            color: #124a58;
+        }
+        
+        .login_btn:hover {
+            color: cornflowerblue
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="mainmenu">
+            <a href="Home.html" class="current nav">HOME</a>
+            <a class="nav" href="Split.html">TAKE QUIZ</a>
+            <a href="Categories.html" class="nav">CATEGORIES</a>
+            <a class="nav" href="About.html">ABOUT</a>
+            <a class="login_btn" href="login.html">LOGIN/SIGN UP</a>
+        </div>
+        
+    </header>
+    <div class="firstcontainer">
+        <div class="head darken">
+            <h1 class="title">HEAR FOR YOU</h1>
+            <a class="getstarted" href="Split.html">GET STARTED</a>
+        </div>
+    </div>
+    <div class="info secondcontainer">
+        <div class="info_text" align="left">
+            <h2 style="font-family: open sans;">What is Hear For You?</h2>
+            <p>We're trying to help people by creating a safe space for them to deal with their day-to-day<br> struggles due to their mental health as well to let you know that you're not alone in this journey.
+                <br>You can also sign up as a Volunteer and pay it forward under complete anonymity.<br></p>
+            <p style="font-size:smaller ;letter-spacing: 3px; font-family: 'Nunito', sans-serif;" onclick="window.location.href = 'About.html';">LEARN MORE</p>
+        </div>
+    </div>
+    <div class="takequiz">
+        <div align="right">
+            <h2 style="font-size:30; font-family: open sans; ">TAKE THE QUIZ</h2>
+            <p>Answer a variety of questions and get a possible diagnoses.<br>Take our Volunteer quiz and get started on making a difference.</p> <br>
+            <a class="quiz_btn " href="# ">QUIZ</a>
+        </div>
+    </div>
+    <section class="categories ">
+
+        <div onclick="window.location.href='Categories.html#depression' ; " class="columns divcol " style="background-color: rgb(19,39,41); ">
+            <h1>DEPRESSION</h1>
+            <p>Sadness, feeling down, having a loss of interest or pleasure in daily activities - these are symptoms familiar to all of us. But, if they persist and affect our life substantially, it may be depression.
+            </p>
+        </div>
+
+        <div onclick="window.location.href='Categories.html#anxiety' ; " class="columns divcol " style="background-color: rgb(29,124,128); ">
+            <h1>ANXIETY</h1>
+            <p>Anxiety disorders form a category of mental health diagnoses that lead to excessive nervousness, fear, apprehension, and worry. When a person regularly feels disproportionate levels of anxiety, it might become a medical disorder. Mild anxiety
+                might be vague and unsettling, while severe anxiety may seriously affect day-to-day living.
+            </p>
+        </div>
+        <div onclick="window.location.href='Categories.html#ptsd' ; " class="columns divcol " style="background-color: rgb(5, 199, 196); ">
+            <h1>PTSD</h1>
+            <p>Post-traumatic stress disorder (PTSD) is a mental health condition that's triggered by a terrifying event — either experiencing it or witnessing it. Symptoms may include flashbacks, nightmares and severe anxiety. Most people who go through
+                traumatic events may have temporary difficulty adjusting and coping. If the symptoms get worse, last for months or even years, and interfere with your day-to-day functioning, you may have PTSD.</p>
+        </div>
+
+    </section>
+    <div onclick="window.location.href='Categories.html#socanx' ; " class="columns divcol " style="background-color: rgb(109, 194, 233); ">
+
+        <h1>SOCIAL ANXIETY</h1>
+        <p>We all know the feeling of being nervous or uncomfortable in a social situation. Social anxiety disorder (also known as social phobia) is one of the most common mental disorders. Here’s how to know if your social silence has gone beyond shyness
+            to a point where you need to see a doctor.
+
+        </p>
+    </div>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
+<!--https://images.unsplash.com/photo-1493836512294-502baa1986e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1967&q=80
+https://images.unsplash.com/photo-1550504630-cc20eca3b23e?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80
+https://images.unsplash.com/photo-1541976844346-f18aeac57b06?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80-->
